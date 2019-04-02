@@ -1,0 +1,40 @@
+# audio3d config file
+#
+[config]
+room=4 3 2.5
+reflect=0.4 0.4 0.4
+#gains=0.95 0.92 0.88 0.86 0.85
+reverb=0.05
+level=80
+capture-device=Analog (1+2) (RME Fireface UC)
+render-device=Analog (3+4) (RME Fireface UC)
+#
+[listener]
+position= 2 1.5 1.25
+facing= 2 2.35 1.25
+hrir=subject_003.hrir
+#
+[source]
+position= 2.25 2.5 1.25
+audio=capture-left
+level=70
+#
+[noise]
+position= 1.75 2.5 1.25
+#circuit=horizontal
+audio=.\NORM\SILENCE_male_B1_speech_TALK_B.wav
+loop=1
+level=25
+#
+[noise]
+position= 1.25 2.5 1.25
+audio=.\NORM\SILENCE_child_B1_speech_TALK_B.wav
+loop=1
+level=25
+#
+[noise]
+position= 2.75 2.5 1.25
+audio=.\NORM\SILENCE_female_B1_speech_TALK_B.wav
+loop=1
+level=25
+
